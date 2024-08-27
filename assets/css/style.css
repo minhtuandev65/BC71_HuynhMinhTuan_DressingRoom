@@ -24,6 +24,7 @@
   -moz-box-sizing: border-box;
   box-sizing: border-box;
 }
+
 .card.hovercard {
   position: relative;
   padding-top: 0;
@@ -40,6 +41,7 @@
   margin: 0 auto;
   position: relative;
 }
+
 .body {
   width: 250px;
   height: 500px;
@@ -48,11 +50,15 @@
   top: 12%;
   left: 22%;
 }
+
 .bikinitop {
   width: 250px;
   height: 500px;
   background: url("./../images/allbody/bikini_branew.png");
   position: absolute;
+  background-size: cover;
+  /* Đảm bảo hình ảnh phủ đầy phần tử */
+  background-position: center;
   top: 12%;
   left: 22%;
   z-index: 1;
@@ -66,6 +72,9 @@
   top: 12%;
   left: 22%;
   z-index: 1;
+  background-size: cover;
+  /* Đảm bảo hình ảnh phủ đầy phần tử */
+  background-position: center;
 }
 
 .model {
@@ -144,10 +153,12 @@ hr {
   width: 176.9px;
   text-align: center;
 }
+
 .nav-pills .nav-item .nav-link {
   border: 1px solid #ccc;
   border-radius: 0 !important;
 }
+
 .well {
   background-color: #eff1f1;
   height: 1500px;
