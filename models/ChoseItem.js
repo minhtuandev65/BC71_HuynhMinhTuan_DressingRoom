@@ -39,9 +39,6 @@ export let tryOn = async (productId) => {
         }
         if (targetElement) {
             targetElement.style.backgroundImage = `url(${cartItem.imgSrc_png})`;
-            if (cartItem.type === 'topclothes') {
-                document.querySelector('.bikinibottom').style.display = 'none'; // ��n phần tử đang chọn
-            }
             targetElement.style.display = 'block'; // Hiển thị phần tử nếu đang bị ẩn
         } else {
             console.error('Target element not found');
