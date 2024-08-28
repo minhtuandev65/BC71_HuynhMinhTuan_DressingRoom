@@ -7,7 +7,7 @@ import { renderTabContent } from "../models/ListChosen.js";
 
 export let fetchProductData = async () => { 
     try {
-        const response = await fetch("/data/Data.json");
+        const response = await fetch("../data/Data.json");
         if (!response.ok) {
             throw new Error(`HTTP error! status: ${response.status}`);
         }
