@@ -39,7 +39,7 @@ export let tryOn = async (productId) => {
         }
         if (targetElement) {
             targetElement.style.backgroundImage = `url(${cartItem.imgSrc_png})`;
-            targetElement.style.display = 'block'; // Hiển thị phần tử nếu đang bị ẩn
+            targetElement.style.display = 'block'; 
         } else {
             console.error('Target element not found');
         }
